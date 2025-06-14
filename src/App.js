@@ -50,7 +50,7 @@ function App() {
     }
 
     return () => clearTimeout(timerRef.current);
-  }, [timeLeft, isActive, isWork, pomodoroCount]);
+  }, [timeLeft, isActive, isWork, pomodoroCount, longBreak, shortBreak, workTime, pomodorosBeforeLongBreak]);
 
   // タイマーの開始/一時停止
   const toggleTimer = () => {
